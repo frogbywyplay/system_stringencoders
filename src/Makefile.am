@@ -75,38 +75,38 @@ modp_qsiter.c: modp_qsiter.h
 
 modp_xml.c: modp_xml.h
 
-modp_b2_data.h: modp_b2_gen
-	./modp_b2_gen > modp_b2_data.h
+#modp_b2_data.h: modp_b2_gen
+#	./modp_b2_gen > modp_b2_data.h
 
-modp_b16_data.h: modp_b16_gen
-	./modp_b16_gen > modp_b16_data.h
+#modp_b16_data.h: modp_b16_gen
+#	./modp_b16_gen > modp_b16_data.h
 
-modp_b64_data.h: modp_b64_gen
-	./modp_b64_gen > modp_b64_data.h
+#modp_b64_data.h: modp_b64_gen
+#	./modp_b64_gen > modp_b64_data.h
 
-modp_ascii_data.h: modp_ascii_gen
-	./modp_ascii_gen > modp_ascii_data.h
+#modp_ascii_data.h: modp_ascii_gen
+#	./modp_ascii_gen > modp_ascii_data.h
 
 #
 # Recall B64WCHARS by default is "-_."
 #
-modp_b64w_data.h: modp_b64_gen
-	./modp_b64_gen $(B64WCHARS) > modp_b64w_data.h
+#modp_b64w_data.h: modp_b64_gen
+#	./modp_b64_gen $(B64WCHARS) > modp_b64w_data.h
 
 #
 # RFC 4648 alphabet is -_=
 # http://www.ietf.org/rfc/rfc4648.txt
-modp_b64r_data.h: modp_b64_gen
-	./modp_b64_gen "-_=" > modp_b64r_data.h
+#modp_b64r_data.h: modp_b64_gen
+#	./modp_b64_gen "-_=" > modp_b64r_data.h
 
-modp_b85_data.h: modp_b85_gen
-	./modp_b85_gen > modp_b85_data.h
+#modp_b85_data.h: modp_b85_gen
+#	./modp_b85_gen > modp_b85_data.h
 
-modp_burl_data.h: modp_burl_gen
-	./modp_burl_gen > modp_burl_data.h
+#modp_burl_data.h: modp_burl_gen
+#	./modp_burl_gen > modp_burl_data.h
 
-modp_bjavascript_data.h: modp_bjavascript_gen
-	./modp_bjavascript_gen > modp_bjavascript_data.h
+#modp_bjavascript_data.h: modp_bjavascript_gen
+#	./modp_bjavascript_gen > modp_bjavascript_data.h
 
 modp_json_data.h: modp_json_gen.py
 	./modp_json_gen.py
